@@ -20,19 +20,19 @@ def x_o():
         map[v - 1][h - 1] = "X"
         map[v1 - 1][h1 - 1] = "O"
         print(f"{row_1}\n{row_2}\n{row_3}")
-        if map[0][0] == "X" and map[0][1] == "X" and map[0][2] == "X" or map[0][0] == "O" and map[0][1] == "O" and map[0][2] == "O":
+        if (map[0][0] == "X" and map[0][1] == "X" and map[0][2] == "X") or (map[0][0] == "O" and map[0][1] == "O" and map[0][2] == "O"):
             print(f"Congratulations to {map[0][0]}!")
             break
-        elif map[1][0] == "X" and map[1][1] == "X" and map[1][2] == "X" or map[1][0] == "O" and map[1][1] == "O" and map[1][2] == "O":
+        elif (map[1][0] == "X" and map[1][1] == "X" and map[1][2] == "X") or (map[1][0] == "O" and map[1][1] == "O" and map[1][2] == "O"):
             print(f"Congratulations to {map[1][0]}!")
             break
-        elif map[2][0] == "X" and map[2][1] == "X" and map[2][2] == "X" or map[2][0] == "O" and map[2][1] == "O" and map[2][2] == "O":
+        elif (map[2][0] == "X" and map[2][1] == "X" and map[2][2] == "X") or (map[2][0] == "O" and map[2][1] == "O" and map[2][2] == "O"):
             print(f"Congratulations to {map[2][0]}!")
             break
-        elif map[0][0] == "X" and map[1][1] == "X" and map[2][2] == "X" or map[0][0] == "O" and map[1][1] == "O" and map[2][2] == "O":
+        elif (map[0][0] == "X" and map[1][1] == "X" and map[2][2] == "X") or (map[0][0] == "O" and map[1][1] == "O" and map[2][2] == "O"):
             print(f"Congratulations to {map[0][0]}!")
             break
-        elif map[0][2] == "X" and map[1][1] == "X" and map[2][0] == "X" or map[0][2] == "O" and map[1][1] == "O" and map[2][0] == "O":
+        elif (map[0][2] == "X" and map[1][1] == "X" and map[2][0] == "X") or (map[0][2] == "O" and map[1][1] == "O" and map[2][0] == "O"):
             print(f"Congratulations to {map[1][1]}!")
             break
 x_o()
