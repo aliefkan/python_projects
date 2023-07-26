@@ -9,7 +9,9 @@ computer_score = 0
 while game:
     computer_choice = random.choice(choices)
     player_choice = input("Please enter your choice(R-S-P): ")
-    if (player_choice.lower() == "r" and computer_choice == "rock") or (player_choice.lower() == "s" and computer_choice == "scissors") or (player_choice.lower() == "p" and computer_choice == "paper"):
+    if player_choice != "R-S-P":
+        continue
+    elif (player_choice.lower() == "r" and computer_choice == "rock") or (player_choice.lower() == "s" and computer_choice == "scissors") or (player_choice.lower() == "p" and computer_choice == "paper"):
         print("You both picked same! Go again!")
     elif (player_choice.lower() == "r" and computer_choice == "scissors") or (player_choice.lower() == "s" and computer_choice == "paper") or (player_choice.lower() == "p" and computer_choice == "rock"):
         print("You won! Congratuliations!")
